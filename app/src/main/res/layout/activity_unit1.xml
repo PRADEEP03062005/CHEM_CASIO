@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unit1img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Layout 1 for input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1359dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="CASE 1"
+                android:textSize="25sp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="       "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter X1% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Component on wet bases"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter X2% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Component on wet bases"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter Xc% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Critical Moisture Content"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter Xe% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Equilibrium Moisture Content"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter Time(Hours) :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter value"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <!-- Layout 2 for result display -->
+
+            <!-- Results TextViews -->
+            <TextView
+                android:id="@+id/resultA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of X1          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of X2          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of Xc          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of Xe          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time in minutes    "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/resultF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value of LS/ANC  "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <!--  case 2 new series -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="                       "
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:textAlignment="center"
+                android:paddingTop="8dp"
+                android:text="CASE 2"
+                android:textSize="25sp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter X1% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Component on Dry bases"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter X2% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Component on Dry bases"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter Xc% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Critical Moisture Content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Enter Xe% :"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Equilibrium Moisture Content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+
+            <!-- Layout 2 for result display -->
+
+            <!-- Results TextViews -->
+            <TextView
+                android:id="@+id/resultA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of X1          "
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/resultB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of X2          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of Xc          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of Xe          "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultF2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value of T is  "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

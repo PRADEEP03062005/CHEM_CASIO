@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/unit4img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Layout 1 for input fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1359dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="CASE 1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="       "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Feed with XF in KG"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Xf KG"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Solvent[Parts]"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parts"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Mole Fraction [XF][Parts]"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MoleFraction"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Mole Fraction [XM][Parts]"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MoleFraction"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <!-- Layout 2 for result display -->
+
+            <!-- Results TextViews -->
+            <TextView
+                android:id="@+id/resultAA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed in grams       :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of XF          :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result of XM         :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed Value            :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value of Xc(pure as 1)"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M Value                 :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C Value                  :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/resultF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculated Yield is  "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--  case 2 new series -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="                       "
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="CASE 2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Evaporation Value in %"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Percentage "
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+
+            <!-- Layout 2 for result display -->
+
+            <!-- Results TextViews -->
+
+            <TextView
+                android:id="@+id/resultA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculated E value1:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculated M value1:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/resultC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculated C value1:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/resultF2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crystal Yield2 :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
