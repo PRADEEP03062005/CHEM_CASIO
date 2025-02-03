@@ -40,8 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.github.PhilJay:MPAndroidChart:3.1.0")
-    implementation("com.github.barteksc:AndroidPdfViewer:master-SNAPSHOT")
+    implementation(libs.mpandroidchart)
+    implementation(libs.androidpdfviewer)
+    implementation(libs.play.services.ads)
     //implementation(kotlin("script-runtime"))
 
 }

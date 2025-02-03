@@ -30,8 +30,13 @@
                 android:layout_marginBottom="8dp"
                 android:textStyle="bold"/>
 
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
+
 
 
         <!-- Unit 1 -->

@@ -1,12 +1,19 @@
 package com.demo.chemcasio;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.WindowMetrics;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +21,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MolarCalculator extends AppCompatActivity {
+
 
     private static final Map<String, Double> elemWeight = new HashMap<>();
 
@@ -173,4 +181,5 @@ public class MolarCalculator extends AppCompatActivity {
         }
         return totalWeight;
     }
+
 }
